@@ -1,14 +1,24 @@
-# Webpack template
+# Test drive development - testing basics
 
-A generic webpack template for html, css and javascript. This is the template that I will be using for my personal projects and will update it as needed.
+A few simple functions that were built using test driven development (TDD) practices. This is a basic approach for the purpose of learning and understanding TDD:
 
-### Important notes
+* Writing a test that fails.
 
-Make sure to modify the command line of `"deploy"` script to refer to correct github branch used for production. Default set is `gh-pages`.
+* Implementing function that passes the test (bare minimum, hardcoded if needed).
+
+* Refactoring the code to remove duplicates and ensure it still passes the test.
+
+### Personal notes
+
+Even though I was following the TDD practices, The last step was usually a major leap, going from a code with bare minimum, to full-blown implementation of the function, which felt a little too steep of a jump.
+
+The upside of this method that I first noticed is that if I want to test different values, I simply duplicate existing test. This not only lets me try a new value for testing purposes, but every previous test is still available and will be used. This is convenient as I do not need to juggle between values to see if previous ones are still passing the test.
 
 ### npm scripts
 
 Below are the scripts that have been added to `package.json` file
+
+`"test"`: runs `jester` to execute all test on created modules.
 
 `"formatTest"`: runs `prettier` check on all files and `eslint` check on all files in `src` folder (no modifications).
 
